@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>camera's</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <div class="di">
+    <div class="camera">
+        <img class="right" src="./New folder/camera1.jpg" width="500" height="300">
+        <br>
+        <br>
+        <br>
+         <img class="partition" src="./New folder/camera2.jpg" width="150" height="100">
+    <img class="partition" src="./New folder/camera3.jpg" width="150" height="100">
+    <img class="partition" src="./New folder/camera4.jpg" width="150" height="100">
+    <img class="partition" src="./New folder/camera5.jpg" width="150" height="100"> 
+       <img class="partition" src="./New folder/camera6.jpg" width="150" height="100">
+    <img class="partition" src="./New folder/camera7.jpg" width="150" height="100">
+    </div>
+    <div class="left">
+    <b>Canon EOS 1500D DSLR Camera Body+ 18-55 mm IS II Lens (Black)</b>
+    <br>
+    <i>⭐⭐⭐✰✰   <del>  3 Reviews</del></i>
+    <br>
+    <br>
+    <b>$40.00  <del>$54.00</del></b>
+    <br>
+    <p>This Canon Camera gives you the freedom to explore different ways to shoot subjects. It packs a multitude of shooting options which you can incorporate in still images to create art that embodies the exact mood and vision you are going for. Don’t worry about the lighting conditions of a place because this camera’s large-sized sensor is designed to capture picture-perfect shots even in a dimly lit environment. Thanks to its Wi-Fi connectivity and NFC paring options, sharing photos is as simple as it gets.</p>
+    <div class="color">
+    </div>
+    <span>color
+        <br>
+        <select>
+            <option>Black</option>
+        </select>
+    </span>
+    <span>Qty  </span>
+    <br>
+    <br>
+    <button id="button1" style="color:black;
+    width:150; height:50; border-radius:12px;" onclick="addtocart()">ADD TO CART</button>
+    <button onclick="increase()">+</button>
+    <button id="count">0</button>
+    <button onclick="decrease()">-</button>
+        </div>
+    <script>
+        let count=0;
+        const countdisplay=document.getElementById("count")
+        function increase(){
+            count++;
+            countdisplay.textContent=count;
+        }
+        function decrease(){
+            if(count>0){
+                count--;
+                countdisplay.textContent=count;
+        }
+        }
+        function addtocart(){
+            let button1=document.getElementById("button1");
+            button1.classList.add("click")
+            setTimeout(()=>{
+                button1.classList.remove("click")
+                //alert("added"+count+"items in this cart");
+            },300);
+            setTimeout(()=>{
+                alert("added"+count+"items in this cart");
+            },400);
+        }
+        
+    </script>
+
+</center>
+    
+</body>
+</html>
