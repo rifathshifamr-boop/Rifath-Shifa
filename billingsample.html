@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin-top: 150px;
+        margin-left: 450px;
+        margin-right: 450px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-style: solid;
+        border-radius:2%;
+        border-color: gray;
+        padding-bottom: 70px;
+        padding-top: 50px;
+        box-shadow:0px 4px 4px;
+        
+    }
+
+    .billing {
+    
+    }
+
+    .sub1 {
+        margin-right: 150px;
+        border: solid;
+        border-color: darkgrey;
+        padding: 2%;
+
+    }
+    .product{
+        display: flex;
+    }
+    .bill{
+        border: solid;
+        border-width: 2px;
+        padding:5%;
+        border-radius:2%;
+    }
+</style>
+
+<body>
+    <div class="billing">
+        <h1 style="text-align: center;">Billing Software</h1>
+        <div class="product">
+            <div class="sub1">
+                <div class="addproduct">
+                    <h2>Add Product</h2>
+                    <input type="text" placeholder="Product Name"> <input type="text" placeholder="price">
+                    <br><br>
+                    <input type="number" placeholder="Available Qty"> <button onclick="add">ADD</button>
+                </div>
+                <div class="searchproduct">
+                    <h2>Search Product</h2>
+                    <input type="text" placeholder="Type Product Name">
+                    <br><br>
+                    <form>
+                        <table border="1">
+                        <tr>
+                            <td>Name</td>
+                        </tr>
+                        <tr>
+                            <td>Price</td>
+                        </tr>
+                        <tr>
+                            <td>QTY</td>
+                        </tr>
+                        <tr>
+                            <td>ADD</td>
+                        </tr>
+                        <tr>
+                            <td>DEL</td>
+                        </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+
+            <div class="bill">
+                <h2>Bill</h2>
+                <tr>
+                    <td>Name</td>
+                </tr>
+                <tr>
+                    <td>QTY</td>
+                </tr>
+                <tr>
+                    <td>Amount</td>
+                </tr>
+                <div class="sub">
+                    <h3>subtotal:$</h3>
+                    <h3>GST(18%):$</h3>
+                    <h2>TOTAL</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
