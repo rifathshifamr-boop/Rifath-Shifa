@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<style>
+    .header{
+        background-color:cyan;
+        display:block;
+        text-align:center;
+        font-size: large;
+        font-family:fantasy;
+    }
+    footer{
+        background-color:cyan;
+        display:block;
+        text-align:center;
+        font-size: large;
+        font-family:fantasy;
+
+    }
+    .about{
+    }
+    .parent{
+        display: flex;
+        justify-content: space-between;
+    }
+    .photo{
+        border-radius: 5px;
+        border-style:solid;
+    }  
+    .left,.right{
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        row-gap: 20px;
+    }
+    button{
+        color:black;
+        background-color:blue;
+        border:solid;
+        border-radius:5px;
+        font-size:x-large;
+
+    }
+</style>
+<body>
+     <header class="header">Rifath Shifa M</header>
+     <br>
+    <div class="parent">
+<div class="about">
+    <section>
+  <h2>About Me</h2>
+  <p>
+    This website is created as part of my learning journey in web development.
+    I am learning HTML, CSS, and JavaScript to build simple and useful websites.
+  </p>
+</section>
+<ul>
+    <h2>Technical skills</h2>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>  
+    <h2>Design Skill</h2>
+    <li>UI Design</li>
+    <li>Simple website design in UI</li>
+</ul>
+</div>
+<br>
+<div class="photo"><img src="me.jpg">
+</div>
+<br><br>
+</div>
+<hr>
+<div class="left">
+<div class="title1"><center><h2 style="color: blue;"><u>Login page</u></h2></center></div>
+<img src="photo1.jpg" style="width:200px;height:230px;border:solid;" class="img">
+<p class="describe">Designed and developed a responsive Login Page with a clean and intuitive user interface. The page allows users to log in securely using their email and password, includes a Remember Me option for better usability, and provides a Forgot Password feature for account recovery. A Sign Up link is also included to support new user registration. The layout focuses on simplicity, accessibility, and user experience.</p>
+<div class="title2"><h2 style="color:blue;"><u>registration page</u></h2></div>
+<img src="photo2.jpg" style="width:200px;height:230px;border:solid;" class="img">
+<p class="describe">Designed and developed a responsive Registration Page with a user-friendly interface. The page allows new users to create an account securely by providing essential details like name, email, and password. It includes validation for accurate data entry, ensuring a smooth and seamless signup experience across all devices.</p>
+</div>
+<br><br>
+<div class="right">
+<div class="title3"><h2 style="color: blue;"><u>basic calculator</u></h2></div>
+<img src="photo3.jpg" style="width:200px;height:230px;border:solid;" class="img">
+<p class="describe">Designed a Basic Calculator with a visually appealing background image that enhances user experience. The calculator supports addition, subtraction, multiplication, and division, along with decimal calculations for precise results. Built with a clean and intuitive interface, it ensures ease of use while maintaining aesthetic appeal.</p>
+<div class="title4"><h2 style="color: blue;"><u>camera </u></h2></div>
+<img src="photo4.jpg" style="width:200px;height:230px;border:solid;" class="img">
+<p class="describe">This webpage presents the Canon EOS 1500D DSLR Camera with a clean and user-friendly layout, featuring multiple images to showcase different angles and details. Users can view the product title, star ratings, pricing, and a detailed description, select color options, adjust quantity with interactive + and - buttons, and add items to the cart with instant notifications. The design emphasizes visual clarity, intuitive interactivity, and a seamless browsing experience, making it an ideal example of a portfolio-ready e-commerce product page.</p>
+</div>
+<br><Br>
+<center><button onclick="openPDF()">Resume</button></center>
+<h3>8924244289 </h3>
+<h3>rifa1234.shifa@gmail.com </h3>
+<footer>https://www.linkedin.com/in/rifathshifa-m-2b91322a5 | https://github.com/rifathshifamr-boop</footer>
+<script>
+    function openPDF(){
+        window.open('Resume.pdf')
+    }
+</script>
+</body>
+</html>
